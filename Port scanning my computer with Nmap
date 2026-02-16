@@ -1,1 +1,9 @@
 For this small lab I will go and port scan my own computer with Nmap to see what ports are currently open on my computer.
+
+For the purpose of this small lab I used the ipconfig command to obtain my computer's IP address.
+After obtaining my IP address I booted up Kali Linux and opened the terminal.
+Nmap has a large variety of commands to use for various purposes like -sS for a SYN scan, -p- to scan all ports, or 
+-p(port number) to scan a specific port. 
+For this I simply typed in "sudo nmap (My IP address) --top-ports=10" into the terminal. 
+The ports that came up were 21, 22, 23, 25, 80, 110, 130, 443, 445, and 3389 all in a filtered state.
+The filtered state means that Nmap was not able to get a response from the target for the port and so Nmap cannot tell if the ports are opened or not. 
